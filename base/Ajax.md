@@ -1,8 +1,3 @@
----
-category: JavaScript
-order: 10
----
-
 ## ajax
 
 - 什么是` Ajax`? 如何创建一个`Ajax`？
