@@ -1,0 +1,23 @@
+{
+  "name": "docs",
+  "version": "1.0.0",
+  "description": "--- home: true # heroImage: /hero.png actionText: 快速上手 → actionLink: /devenv/ features: - title: 聚合   details: 规范、效率、架构 - title: 助力   details: 提高前端开发者效率 - title: 覆盖全面   details: 覆盖大前端各个方面 footer: MIT Licensed | Copyright © 2019-present stark wang ---",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "tag": "node node_modules/easy-tag"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wsdo/gitfe.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wsdo/gitfe/issues"
+  },
+  "homepage": "https://github.com/wsdo/gitfe#readme",
+  "dependencies": {
+    "easy-tag": "^1.0.3"
+  }
+}
