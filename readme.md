@@ -7,7 +7,7 @@ features:
 - title: 聚合
   details: 基础 进阶
 - title: 助力
-  details: 帮助正在找工作同学
+  details: 提升业务之外的能力
 - title: 覆盖全面
   details: 覆盖大前端各个方面
 footer: MIT Licensed | Copyright © 2019-present stark wang
