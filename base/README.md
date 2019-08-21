@@ -4,8 +4,8 @@ pageClass: custom-code-highlight
 ---
 
 
-# 第一部分：基础篇
-![2019-03-12-10-46-13](http://s.shudong.wang/2019-03-12-10-46-13.png)
+<!-- # 第一部分：基础篇 -->
+<!-- ![2019-03-12-10-46-13](http://s.shudong.wang/2019-03-12-10-46-13.png) -->
 ##  一、HTML、HTTP、web综合问题
 
 ### 1 前端需要注意哪些SEO
@@ -2977,7 +2977,7 @@ var b = 'Hello world'
 - 解决方案 - 异步
 
 ### 88 是否用过 jQuery 的 Deferred
-
+<!-- 
 ![image.png](https://upload-images.jianshu.io/upload_images/1480597-77a330fbdcc1f1cc.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 ![image.png](https://upload-images.jianshu.io/upload_images/1480597-6f79b726f5341f7d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 ![image.png](https://upload-images.jianshu.io/upload_images/1480597-82ac861eced36a45.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
@@ -2987,7 +2987,7 @@ var b = 'Hello world'
 ![image.png](https://upload-images.jianshu.io/upload_images/1480597-243444771c6b30ab.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 ![image.png](https://upload-images.jianshu.io/upload_images/1480597-d2db463132d1572a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 ![image.png](https://upload-images.jianshu.io/upload_images/1480597-c589d6f7caf8b27c.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-![image.png](https://upload-images.jianshu.io/upload_images/1480597-ab3b7f684e99e6cb.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![image.png](https://upload-images.jianshu.io/upload_images/1480597-ab3b7f684e99e6cb.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240) -->
 
 ### 89 前端面试之hybrid
 
