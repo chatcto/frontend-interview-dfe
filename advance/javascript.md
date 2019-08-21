@@ -23,7 +23,7 @@ b.name = 'EF'
 console.log(a.name) // EF
 ```
 
-### 2 Typeof
+### 2.Typeof
 
 > `typeof` 对于基本类型，除了 `null` 都可以显示正确的类型
 
@@ -67,7 +67,7 @@ let undefined = 1
 a === void 0
 ```
 
-### 3 类型转换
+### 3.类型转换
 
 **转Boolean**
 
@@ -132,7 +132,7 @@ ToPrimitive([]) == 0
 - 如果是字符串，就通过 `unicode` 字符索引来比较
 
 
-### 4 原型
+### 4.原型
 
 ![](https://camo.githubusercontent.com/71cab2efcf6fb8401a2f0ef49443dd94bffc1373/68747470733a2f2f757365722d676f6c642d63646e2e786974752e696f2f323031382f332f31332f313632316538613962636230383732643f773d34383826683d35393026663d706e6726733d313531373232)
 
@@ -140,7 +140,7 @@ ToPrimitive([]) == 0
 - 每个对象都有 `__proto__ `属性，指向了创建该对象的构造函数的原型。其实这个属性指向了 `[[prototype]]`，但是 `[[prototype]]` 是内部属性，我们并不能访问到，所以使用 `_proto_` 来访问。
 - 对象可以通过` __proto__` 来寻找不属于该对象的属性，`__proto__` 将对象连接起来组成了原型链
 
-### 5 new
+### 5.new
 
 - 新生成了一个对象
 - 链接到原型
@@ -164,7 +164,7 @@ function create() {
 }
 ```
 
-### 6 instanceof
+### 6.instanceof
 
 > `instanceof` 可以正确的判断对象的类型，因为内部机制是通过判断对象的原型链中是不是能找到类型的 `prototype`
 
@@ -187,7 +187,7 @@ function instanceof(left, right) {
 }
 ```
 
-### 7 this
+### 7.this
 
 ```js
 function foo() {
@@ -227,7 +227,7 @@ console.log(a()()())
 
 > 箭头函数其实是没有 `this` 的，这个函数中的 `this` 只取决于他外面的第一个不是箭头函数的函数的 `this`。在这个例子中，因为调用 `a` 符合前面代码中的第一个情况，所以 `this` 是 `window`。并且 this 一旦绑定了上下文，就不会被任何代码改变
 
-### 8 执行上下文
+### 8.执行上下文
 
 > 当执行 JS 代码时，会产生三种执行上下文
 
@@ -351,7 +351,7 @@ specialObject.foo = foo; // {DontDelete}, {ReadOnly}
 delete Scope[0]; // remove specialObject from the front of scope chain
 ```
 
-### 9 闭包
+### 9.闭包
 
 > 闭包的定义很简单：函数 A 返回了一个函数 B，并且函数 B 中使用了函数 A 的变量，函数 B 就被称为闭包。
 
@@ -433,7 +433,7 @@ for ( let i=1; i<=5; i++) {
 }
 ```
 
-### 10 深浅拷贝
+### 10.深浅拷贝
 
 ```js
 letet a a = {
@@ -544,7 +544,7 @@ console.log(b) // {name: "poetries"}
 - 你会发现在上述情况中，该方法会忽略掉函数和`undefined。
 - 但是在通常情况下，复杂数据都是可以序列化的，所以这个函数可以解决大部分问题，并且该函数是内置函数中处理深拷贝性能最快的。当然如果你的数据中含有以上三种情况下，可以使用 `lodash` 的深拷贝函数。
 
-### 11 模块化
+### 11.模块化
 
 > 在有 `Babel` 的情况下，我们可以直接使用 `ES6 `的模块化
 
@@ -628,7 +628,7 @@ define(function(require, exports, module) {
 })
 ```
 
-### 12 防抖
+### 12.防抖
 
 > 你是否在日常开发中遇到一个问题，在滚动事件中需要做个复杂计算或者实现一个按钮的防二次点击操作。
 
@@ -689,7 +689,7 @@ function debounce (func, wait = 50, immediate = true) {
 - 对于按钮防点击来说的实现：如果函数是立即执行的，就立即调用，如果函数是延迟执行的，就缓存上下文和参数，放到延迟函数中去执行。一旦我开始一个定时器，只要我定时器还在，你每次点击我都重新计时。一旦你点累了，定时器时间到，定时器重置为 `null`，就可以再次点击了。
 - 对于延时执行函数来说的实现：清除定时器`ID`，如果是延迟调用就调用函数
 
-### 13 节流
+### 13.节流
 
 > 防抖动和节流本质是不一样的。防抖动是将多次执行变为最后一次执行，节流是将多次执行变成每隔一段时间执行
 
@@ -761,7 +761,7 @@ _.throttle = function(func, wait, options) {
   };
 ```
 
-### 14 继承
+### 14.继承
 
 > 在 ES5 中，我们可以使用如下方式解决继承的问题
 
@@ -818,7 +818,7 @@ Object.setPrototypeOf(MyData.prototype, Date.prototype)
 - 以上继承实现思路：先创建父类实例 => 改变实例原先的 `_proto__ `转而连接到子类的 `prototype `=> 子类的 `prototype` 的 `__proto__` 改为父类的 `prototype`。
 - 通过以上方法实现的继承就可以完美解决 `JS` 底层的这个限制
 
-### 15 call, apply, bind
+### 15.call, apply, bind
 
 - `call` 和 `apply` 都是为了解决改变 `this` 的指向。作用都是相同的，只是传参的方式不同。
 - 除了第一个参数外，`call` 可以接收一个参数列表，`apply` 只接受一个参数数组
@@ -836,7 +836,7 @@ getValue.call(a, 'yck', '24')
 getValue.apply(a, ['yck', '24'])
 ```
 
-### 16 Promise 实现
+### 16.Promise 实现
 
 - 可以把 `Promise` 看成一个状态机。初始是 `pending` 状态，可以通过函数 `resolve `和 `reject` ，将状态转变为 `resolved `或者 `rejected` 状态，状态一旦改变就不能再次变化。
 - `then` 函数会返回一个 `Promise` 实例，并且该返回值是一个新的实例而不是之前的实例。因为 `Promise` 规范规定除了 `pending` 状态，其他状态是不可以改变的，如果返回的是一个相同实例的话，多个 `then` 调用就失去意义了。
@@ -1014,7 +1014,7 @@ function resolutionProcedure(promise2, x, resolve, reject) {
 }
 ```
 
-### 17 Generator 实现
+### 17.Generator 实现
 
 > `Generator` 是 `ES6 `中新增的语法，和 `Promise` 一样，都可以用来异步编程
 
@@ -1082,7 +1082,7 @@ function test() {
 }
 ```
 
-### 18 Proxy
+### 18.Proxy
 
 > `Proxy` 是 `ES6` 中新增的功能，可以用来自定义对象中的操作
 
