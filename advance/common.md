@@ -1,5 +1,5 @@
 ___
-title: '常用'
+title: '面试常问'
 ___
 
 ## 输入 字符串 aaaaaabbbbbccccddac 输出 a6b5c4d2a1c1
@@ -200,3 +200,16 @@ setTimeout
 */
 ```
 ![2019-08-14-17-57-11](http://s.shudong.wang/2019-08-14-17-57-11.png)
+
+## vuex
+
+## getter 怎么使用
+
+## getNum(state)  state怎么来的
+
+## getter api 怎么设计的？
+
+## 改变vuex 的 state页面的state 会变化
+
+## 为什么mutation的state改变了store的state就改变了
+
