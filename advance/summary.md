@@ -3,9 +3,6 @@ sidebarDepth: 4
 pageClass: custom-code-highlight
 ---
 
-
-# 第三部分：高级篇
-
 ## 一、JavaScript进阶
 
 ### 1 内置类型
