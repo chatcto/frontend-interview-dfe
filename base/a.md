@@ -1,3 +1,7 @@
+---
+title: ajax
+---
+
 ## ajax
 
 - 什么是` Ajax`? 如何创建一个`Ajax`？
