@@ -27,6 +27,7 @@
 
 👤 **stark**
 
+* Blog: [@wsdo](https://shudong.wang)
 * Twitter: [@wsd312](https://twitter.com/wsd312)
 * Github: [@wsdo](https://github.com/wsdo)
 
