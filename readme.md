@@ -1,19 +1,5 @@
----
-home: true
-heroImage: /hero.png
-actionText: 快速上手 →
-actionLink: /docs/base/
-features:
-- title: 聚合
-  details: 基础 进阶
-- title: 助力
-  details: 提升业务之外的能力
-- title: 覆盖全面
-  details: 覆盖大前端各个方面
-footer: MIT Licensed | Copyright © 2019-present stark wang
----
-
 ## 前端面试题 汇总
+
 
 ## 特性
 * 面试题
@@ -28,21 +14,3 @@ footer: MIT Licensed | Copyright © 2019-present stark wang
 * 框架
 
 欢迎 贡献
-
-## 大纲
-#### 内置类型
-
-#### Typeof
-
-#### 类型转换
-
-* Service Worker
-
-#### 浏览器
-#### 性能
-
-#### 安全
-
-#### react
-
-#### vue
